@@ -1,6 +1,6 @@
 author: Aakash Haran
 source: Kattis
-validation: custom
+# validation: custom
 
 limits:
   time_safety_margin: 4

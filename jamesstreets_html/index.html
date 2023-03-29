@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.6.0">
+  <meta content="text/html; charset=utf-8" http-equiv=
+  "content-type">
+  <title></title>
+  <link rel="stylesheet" href="problem.css">
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: { 
+    ignoreClass: ".*",
+    inlineMath: [['$','$'], ['\\(','\\)']]
+        },
+  MMLorHTML: {
+    prefer: {Firefox: "HTML"}
+    }
+  });
+  </script>
+  <script type="text/javascript" src=
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+  <div class="problembody">
+    <div class="problemheader">
+      <h1>James’s Streets</h1>
+      <h3>Problem ID: jamesstreets</h3>
+    </div>
+    <p>James has been invited to an incredibly important, exclusive
+    conference at Moc-Yap that is sure to boost his career. Since
+    James wouldn’t miss this for the world, he makes the 45 hour
+    drive across the country to attend. In order to make it to the
+    building where the conference is held, he will have to cross
+    the street and there are no designated sidewalks. This is a
+    problem as James has a deathly fear of crossing streets without
+    sidewalks. The only way he would ever possibly feel comfortable
+    crossing the street is if he had at least <span class=
+    "tex2jax_process">$K$</span> seconds in which there was no car
+    crossing as that is the fastest James can cross this street
+    according to his calculations. Fortunately, even if a car
+    reached James’s path at exactly the <span class=
+    "tex2jax_process">$Kth$</span> second from when James starts to
+    cross the street, or if James starts to cross the street right
+    after a car crosses he will be safe. James plans to walk in a
+    straight line, perpendicular to the street to minimize his
+    distance as well. James also considered waiting until every car
+    finished crossing before he started to cross the street, but
+    there simply isn’t enough time to wait. If it’s impossible to
+    make it on time, he will have to let his manager know of his
+    extenuating circumstances, but he needs to do so quickly.</p>
+    <h2>Input</h2>
+    <p>The input consists of one test case. The input starts with a
+    pair of integers, <span class="tex2jax_process">$N$</span> and
+    <span class="tex2jax_process">$K$</span>. <span class=
+    "tex2jax_process">$N$</span> is between <span class=
+    "tex2jax_process">$1$</span> and <span class=
+    "tex2jax_process">$100,000$</span> and <span class=
+    "tex2jax_process">$K$</span> is between <span class=
+    "tex2jax_process">$1$</span> and <span class=
+    "tex2jax_process">$50,000$</span>. <span class=
+    "tex2jax_process">$N$</span> indicates the number of cars on
+    the road and <span class="tex2jax_process">$K$</span> indicates
+    the amount of time in seconds James requires to cross the
+    street. <span class="tex2jax_process">$N$</span> integers
+    follow, <span class="tex2jax_process">$c_1, c_2, c_3, \dots
+    c_N$</span>, each between <span class=
+    "tex2jax_process">$-1,000,000$</span> and <span class=
+    "tex2jax_process">$1,000,000$</span>, indicating the time,
+    <span class="tex2jax_process">$|c_i|$</span>, that car
+    <span class="tex2jax_process">$c_i$</span> takes to reach the
+    path James is crossing. Each car has a negligible length in
+    this scenario. A negative time indicates a car coming from the
+    left, and a positive number indicates a car coming from the
+    right. If <span class="tex2jax_process">$c_i = c_j$</span>
+    where <span class="tex2jax_process">$i \ne j$</span>,
+    <span class="tex2jax_process">$c_i$</span> and <span class=
+    "tex2jax_process">$c_j$</span> can be treated as one car.</p>
+    <h2>Output</h2>
+    <p>Output the string "YES" if James can cross the street or
+    "IMPOSSIBLE" if James cannot cross the street.</p>
+    <table class="sample" summary="sample data">
+      <tr>
+        <th>Sample Input 1</th>
+        <th>Sample Output 1</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>7 5
+-10 -5 1 2 5 9 15
+</pre>
+        </td>
+        <td>
+          <pre>YES
+</pre>
+        </td>
+      </tr>
+    </table>
+    <table class="sample" summary="sample data">
+      <tr>
+        <th>Sample Input 2</th>
+        <th>Sample Output 2</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>5 10
+2 5 -10 3 -19
+</pre>
+        </td>
+        <td>
+          <pre>IMPOSSIBLE
+</pre>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
