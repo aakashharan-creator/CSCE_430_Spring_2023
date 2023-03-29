@@ -1,0 +1,36 @@
+\problemname{James's Streets}
+
+James has been invited to an incredibly important, exclusive conference at Moc-Yap that 
+is sure to boost his career. Since James wouldn't miss this for the world,
+he makes the 45 hour drive across the country to attend. 
+In order to make it to the building where the conference is held,
+he will have to cross the street and there are no designated 
+sidewalks. This is a problem as James has a deathly 
+fear of crossing streets without sidewalks. The only way he would ever possibly feel 
+comfortable crossing the street is if he had at least $K$ seconds in which 
+there was no car crossing as that is the fastest James can cross this street 
+according to his calculations. Fortunately, even if a car reached James's
+path at exactly the $Kth$ second from when James starts to cross the street, or if James
+starts to cross the street right after a car crosses he will be safe. James plans to walk
+in a straight line, perpendicular to the street to minimize his distance as well. James also considered
+waiting until every car finished crossing before he started to cross the street, but there simply isn't enough
+time to wait. If it's impossible to make it on time, he will have to let his manager know of his 
+extenuating circumstances, but he needs to do so quickly.
+
+\section*{Input}
+
+The input consists of one test case. The input starts with a pair of integers, 
+$N$ and $K$. $N$ is between $1$ and $100,000$ and $K$ is between $1$ and $50,000$. 
+$N$ indicates the number of cars on the road and $K$ indicates the amount of 
+time in seconds James requires to cross the street.
+$N$ integers follow, $c_1, c_2, c_3, \dots c_N$, each between $-1,000,000$
+and $1,000,000$, indicating the time, $|c_i|$, that car $c_i$ takes
+to reach the path James is crossing. Each car has a negligible length in this scenario.
+A negative time indicates a car coming from the left, and a positive 
+number indicates a car coming from the right. If $c_i = c_j$ where $i \ne j$, 
+$c_i$ and $c_j$ can be treated as one car.
+
+\section*{Output}
+
+Output the string "YES" if James can cross the street 
+or "IMPOSSIBLE" if James cannot cross the street.
