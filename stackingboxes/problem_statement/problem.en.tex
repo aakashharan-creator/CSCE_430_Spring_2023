@@ -1,0 +1,21 @@
+\problemname{Babylonian Boxes}
+
+The people of 2D Babylon have the brilliant idea to build a tower to reach heaven. 
+At their disposal they have rectangles with varying widths and heights. In order to construct the 
+tower, they can stack these rectangles. The only problem is they can stack a rectangle on another 
+only if it's base is lesser than or equal to the rectangle directly below it. Due to limits on construction infrastructure,
+the people of Babylon cannot change the relative order of the boxes they see. It must be taken in the sequence they 
+see it. For example, a rectangle that appears earlier in the input cannot be placed above a rectangle 
+that appears later in the sequence even if it obeys the base rule. One thing they can do however, is rotate the rectangle 
+to use the height or width as a base as long as the base stacking rule isn't violated. Given a set of rectangles 
+help the people of 2D Babylon build the tallest tower they can. There's no way this is a bad idea, right?
+
+\section*{Input}
+
+The input consists of one test case. The first line contains an integer $n$ $(1 \le n \le 1000)$, the number of rectangles. 
+The following $n$ lines contains two space separated integers, $a$ and $b$ $(1 \le a, b \le 200)$, the dimensions
+of the $ith$ rectangle.
+
+\section*{Output}
+
+Output a single integer, the tallest tower that can be built.
